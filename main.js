@@ -1,14 +1,16 @@
-let trabajadores = Number(prompt("Ingrese el numero de trabajadores"));
-        for (let i=1; i<=trabajadores;i++){
-            let tiempo = Number(prompt("Ingrese el tiempo que lleva en la empresa"));
-            if (tiempo>0 && tiempo<=5){
-                alert("iene un aumento de 100 pesos");
-            } else if (tiempo >5 && tiempo<=10 ){
-                alert("Tiene un aumento de  250 pesos");
-            } else if (tiempo >10 && tiempo<=20 ){
-                alert("Tiene un aumento de 400 pesos");
-            } else {
-                alert("Tiene un aumento de 550 pesos");
-            }
-        }
-alert("Fin del programa")
+let angulo=Number(prompt("Digite el angulo :"));
+let serie=Number(prompt("Digite la serie : "));
+
+let res=0,num=3,facto=1;
+        for (let i=1; i<=serie;i++){
+            for (let j=1;j<=num;j++){
+                facto *= j; 
+            }   
+            if (i%2==0){
+                res+=(angulo*num)/facto;
+                num+=2;
+            } else{
+                res-=(angulo*num)/facto; 
+                num+=2;
+            }   
+        alert("El seno del angulo "+angulo + "es" +res); }
