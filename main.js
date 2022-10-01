@@ -1,15 +1,10 @@
-const iva=0.16
-const descuento=0.15
-const precio = 100000;
-        let total=0;
-        let cantidad = Number(prompt("Ingrese la cantidad de productos"))
-        for (let i=1; i<=cantidad;i++){
-            total+=precio;
-        }
-        let totalPagar= total+(total*iva);
-        if (totalPagar>500000){
-            let totalDesc = totalPagar-(totalPagar*descuento);
-            alert("El total a pagar es de " +totalDesc);
-        } else {
-            alert("El total a pagar es de "+totalPagar );
-        }
+let numeros=Number(prompt('Digite la cantidad de numeros que desee hacer: '));
+let num=1;
+let suma=0;
+for (let i=1;i<numeros;i++){
+  let total=i**b;
+  suma=total+suma;
+  alert("El resultado de elevar"+i+"a"+num+"es"+total);
+  num+=1;
+}
+alert("El resultado de sumar los otros resultados es:"+suma);
